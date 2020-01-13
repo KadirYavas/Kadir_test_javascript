@@ -163,15 +163,48 @@ let carre = {
         this.borderAspect = borderAspect;
         this.epaisseur = epaisseur;
         this.couleur = couleur;
-        if(borderAspect !== "solid" || borderAspect !== "dotted"){
-            alert('Veuillez entrez une valeur correcte pour borderAspect')
-        } else {
-            console.log(carre)
-        }
-        if(couleur != "red" || couleur != "blue" || couleur != "green"){
-            alert('Veuillez entrez une valeur correcte pour couleur')
-        }
+        // if(borderAspect != "solid" || borderAspect != "dotted"){
+        //     alert('Veuillez entrez une valeur correcte pour borderAspect')
+        // } else {
+        //     console.log(carre)
+        // }
+        // if(couleur != "red" || couleur != "blue" || couleur != "green"){
+        //     alert('Veuillez entrez une valeur correcte pour couleur')
+        // } else {
+        //     console.log(carre)
+        // }
     }
 }
+// Les commentaires sont pas finis
+carre.remplir(15, "rond", 30, "blue")
 
-carre.remplir(15, "dotted", "20mm", "blue")
+// Exo 21
+// Section + H1 dans le HTML
+
+// Exo 22
+
+let section = document.getElementsByTagName('section')[0]
+
+section.setAttribute('id', 'management')
+
+let h1 = section.getElementsByTagName('h1')[0]
+
+h1.innerText = "Bienvenue"
+
+console.log(section)
+
+// Exo 23
+
+let h2 = document.createElement('h2')
+section.appendChild(h2)
+
+let input1 = document.createElement('input')
+let input2 = document.createElement('input')
+let input3 = document.createElement('input')
+
+section.appendChild(input1)
+section.appendChild(input2)
+section.appendChild(input3)
+
+console.log(section)
+
